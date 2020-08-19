@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- What are the "coordinates" of this project: -->
+    <!-- To publish an open source project, you must control the domain referred in groupId -->
+    <groupId>no.kristiania.demo</groupId>
+    <!-- The name of the project goes in artifactId -->
+    <artifactId>demo</artifactId>
+    <!-- Version numbers -->
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Dependencies are libraries made by others that you use -->
+    <dependencies>
+        <dependency>
+            <!-- org.junit.jupiter:junit-jupiter is our test framework -->
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.5.2</version>
+            <!-- make available to code under `src/test/java`, but not `src/main/java` -->
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <!-- org.postgresql:postgresql lets Java connect to PostgreSQL -->
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.8</version>
+            <!-- make available both to code under `src/test/java` and `src/main/java` -->
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
